@@ -1,0 +1,95 @@
+body {
+  font-family: sans-serif;
+}
+.wrapper {
+  display: grid;
+  place-content: center;
+  padding-top: 10vh;
+}
+form {
+  max-width: 80vw;
+  width: 550px;
+  margin: auto;
+  display: flex;
+  gap: 1rem;
+  position: relative;
+}
+input {
+  width: 100%;
+  padding: 0.4rem 0.7rem;
+  outline: none;
+  font-size: 1.4rem;
+  border: 1px solid black;
+  border-radius: 7px;
+}
+button {
+  padding: 0.4rem 1rem;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+  background-color: rgba(180, 91, 8, 0.986);
+  color: white;
+  transition: 0.4s;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+.error {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: rgb(170, 15, 15);
+}
+.choice {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  justify-content: center;
+  gap: 2rem;
+}
+.choice a button {
+  font-size: 1.7rem;
+}
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2rem;
+  padding: 2rem;
+}
+.username {
+  font-size: 2rem;
+}
+.follower-component {
+  display: flex;
+  align-items: center;
+  max-width: 320px;
+  width: 100%;
+  transition: 0.3s;
+  gap: 2rem;
+  padding: 0.5rem;
+  border-radius: 7px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.follower-component img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.repo-component {
+  max-width: 350px;
+  width: 100%;
+  transition: 0.3s;
+  padding: 1rem;
+  border-radius: 7px;
+  text-align: center;
+}
+.follower-component:hover,
+.repo-component:hover {
+  background-color: rgb(203, 228, 250);
+  cursor: pointer;
+}
